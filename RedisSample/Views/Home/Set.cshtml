@@ -1,0 +1,21 @@
+﻿@model RedisSample.Models.Color
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    <div class="form-group row">
+        <label asp-for="ColorName" class="col-3 control-label"></label>
+        <div class="col-4">
+            <input asp-for="ColorName" class="form-control" />
+            <span asp-validation-for="ColorName"></span>
+         </div>
+    </div>
+    <div class="form-actions form-actions-new">
+        <div class="row">
+            <div class="col-12">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+        </div>
+   </div>
+</form>
